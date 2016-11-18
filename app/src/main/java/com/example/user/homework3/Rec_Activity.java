@@ -111,10 +111,8 @@ public class Rec_Activity extends AppCompatActivity implements CustomRycyclerAda
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.mAddNewPost:
-                /*Toast.makeText(this,"",Toast.LENGTH_LONG).show();*/
                 Intent intent = new Intent(this,activity_add_new_post.class);
                 startActivityForResult(intent,1);
-              //  startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
